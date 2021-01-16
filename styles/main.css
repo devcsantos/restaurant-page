@@ -1,5 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+:root {
+  --palette-bgcolor: #FFFAAA;
+  --header-font: 'Yusei Magic', sans-serif;
+  --nav-button-color: #324178;
+  --nav-button-color-hover: #475992;
+  --header-color: #C27E78;
+  --footer-color: #5C6060;
+}
+
 *, *:after, *:before {
   margin: 0px;
   padding: 0px;
   box-sizing: content-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#main-content {
+  background-color: var(--palette-bgcolor);
+  height: 100vh;
+}
+
+#header {
+  text-align: center;
+  font-family: var(--header-font);
+  font-size: 80px;
+  line-height: 100px;
+  background-color: var(--header-color);
+  color: white;
+}
+
+#nav-bar {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-button {
+  width: 33.3vw;
+  border: 2px solid black;
+  line-height: 60px;
+  font-size: 40px;
+  background-color: var(--nav-button-color);
+  transition: background-color 0.4s ease-out;
+  color: white;
+  text-shadow: 2px 2px 8px black;
+}
+
+.nav-button:hover {
+  background-color: var(--nav-button-color-hover);
+  cursor: pointer;
+}
+
+#nav-home {
+
+}
+
+#nav-menu {
+
+}
+
+#nav-about {
+
+}
+
+#footer {
+  height: 150px;
+  background-color: var(--footer-color);
 }
